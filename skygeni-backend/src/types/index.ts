@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from "express";
+import { Request } from "express";
 
 export interface TypedRequest<T = any> extends Request {
   body: T;
@@ -24,7 +24,7 @@ export interface DashboardStats {
   revenueToday: number;
 }
 
-interface AccountType {
+export interface AccountType {
   count: number;
   acv: number;
   closed_fiscal_quarter: string;
@@ -32,21 +32,21 @@ interface AccountType {
   query_key: string;
 }
 
-interface ACVType {
+export interface ACVType {
   count: number;
   acv: number;
   closed_fiscal_quarter: string;
   ACV_Range: string;
 }
 
-interface CustomerType {
+export interface CustomerType {
   count: number;
   acv: number;
   closed_fiscal_quarter: string;
   Cust_Type: string;
 }
 
-interface TeamType {
+export interface TeamType {
   count: number;
   acv: number;
   closed_fiscal_quarter: string;

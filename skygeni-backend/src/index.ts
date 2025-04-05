@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import express, { Express, Request, Response, NextFunction } from "express";
+import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
@@ -16,7 +16,11 @@ const PORT: number = parseInt(process.env.PORT || "3000", 10);
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN || "http://localhost:5173",
+  })
+);
 app.use(helmet());
 app.use(morgan("dev"));
 
@@ -33,7 +37,7 @@ app.use("*", (req: Request, res: Response) => {
 });
 
 // Error handling middleware
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+app.use((err: Error, req: Request, res: Response) => {
   console.error(err.stack);
 
   const errorResponse: ErrorResponse = {
