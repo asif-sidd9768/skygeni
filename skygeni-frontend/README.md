@@ -22,35 +22,6 @@ A modern, interactive dashboard built with React and Material-UI that visualizes
   - Redux for state management
   - D3.js for data visualization
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/sales-dashboard.git
-cd sales-dashboard
-```
-
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
-
 The application will be available at `http://localhost:5173`
 
 ## Project Structure
