@@ -2,7 +2,7 @@
 
 A comprehensive sales performance dashboard application with a modern frontend and robust backend.
 
-![SkyGeni Dashboard](./assets/Screenshot.png)
+![SkyGeni Dashboard](./assets/dashboard-preview.png)
 
 
 ## Project Overview
