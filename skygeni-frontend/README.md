@@ -14,7 +14,6 @@ A modern, interactive dashboard built with React and Material-UI that visualizes
   - Dynamic charts and graphs
   - Responsive design
   - Animated transitions
-  - Dark/Light theme support
 
 - **Modern Tech Stack**
   - React with TypeScript
