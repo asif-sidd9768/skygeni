@@ -7,37 +7,45 @@ A TypeScript Express.js backend boilerplate for the SkyGeni application.
 ```
 skygeni-backend/
 ├── .env                # Environment variables
-├── .eslintrc.json     # ESLint configuration
-├── tsconfig.json      # TypeScript configuration
-├── package.json       # Project dependencies and scripts
+├── .eslintrc.json      # ESLint configuration
+├── tsconfig.json       # TypeScript configuration
+├── package.json        # Project dependencies and scripts
 ├── src/
-│   ├── index.ts       # Entry point
-│   ├── types/         # Type definitions
-│   │   └── index.ts   # Application types
-│   ├── routes/        # API routes
-│   │   ├── index.ts   # Route aggregator
+│   ├── index.ts        # Entry point
+│   ├── types/          # Type definitions
+│   │   └── index.ts    # Application types
+│   ├── routes/         # API routes
+│   │   ├── index.ts    # Route aggregator
 │   │   └── dashboard.routes.ts  # Dashboard routes
-│   └── controllers/   # Route controllers
+│   └── controllers/    # Route controllers
 │       └── dashboard.controller.ts  # Dashboard controller
+│   ├── utils/          # Utility functions
+│   │   ├── readFiles.ts          # File reading utility
+│   │   ├── processCustomerData.ts # Customer data processing
+│   │   ├── processIndustryData.ts # Industry data processing
+│   │   ├── processAcvRangeData.ts # ACV range data processing
+│   │   └── processTeamData.ts     # Team data processing
 ```
 
 ## Available Routes
 
-- `GET /api` - Welcome message
-- `GET /api/dashboard` - Get dashboard data
-- `GET /api/dashboard/stats` - Get dashboard statistics
-- `GET /health` - Health check endpoint
+### Dashboard Routes
+- `GET /api/dashboard` - Retrieve dashboard data
 
-## Getting Started
+### Health Check
+- `GET /health` - Check the health of the server
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run the development server: `npm run dev`
 
 ## Scripts
 
-- `npm run build` - Build the TypeScript code
+- `npm run build` - Compile TypeScript code to JavaScript
 - `npm start` - Start the compiled server
 - `npm run dev` - Start the development server with hot-reload
-- `npm run lint` - Run ESLint
-- `npm test` - Run tests
+- `npm run lint` - Run ESLint to check for code quality issues
+
+## Technologies Used
+
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web framework
+- **TypeScript** - Typed JavaScript
+- **ESLint** - Linting tool for code quality
