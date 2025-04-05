@@ -2,6 +2,9 @@
 
 A comprehensive sales performance dashboard application with a modern frontend and robust backend.
 
+![SkyGeni Dashboard](./assets/Screenshot.png)
+
+
 ## Project Overview
 
 SkyGeni is a full-stack application that provides detailed sales performance analytics through an interactive dashboard. The application consists of two main components:
